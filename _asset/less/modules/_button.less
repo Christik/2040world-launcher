@@ -1,0 +1,94 @@
+/*===============================
+  Form Label
+  ===============================*/
+
+@button-gradient-light: #fddf79;
+@button-gradient-dark: #bf9400;
+@button-gradient-light-green: #5dffad;
+@button-gradient-dark-green: #0c8648;
+
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: none;
+  text-align: center;
+  height: 4rem;
+  border-radius: 2rem;
+  background: linear-gradient(@button-gradient-light, @button-gradient-dark);
+  color: #000;
+  text-shadow: 1px 1px #fff;
+  font-family: @font-secondary;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: .25rem;
+    top: .25rem;
+    right: .25rem;
+    bottom: .25rem;
+    border-radius: 1.75rem;
+    background: @color-bg-accent-secondary;
+  }
+
+  span {
+    position: relative;
+  }
+}
+
+// Green
+.button--green {
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  background: linear-gradient(@button-gradient-light-green, @button-gradient-dark-green);
+  &:before {
+    background-color: @color-bg-success;
+  }
+}
+
+// Body Error
+body.is-error {
+  .button {
+    filter: grayscale(1);
+    pointer-events: none;
+  }
+}
+
+@media (hover: hover) {
+  .button:hover {
+    &:before {
+      background-color: darken(@color-bg-accent-secondary, 4%);
+    }
+  }
+
+  .button:active {
+    background: linear-gradient(@button-gradient-dark, @button-gradient-light);
+    &:before {
+      background-color: darken(@color-bg-accent-secondary, 7%);
+    }
+  }
+
+  .button--green:hover {
+    &:before {
+      background-color: darken(@color-bg-success, 4%);
+    }
+  }
+
+  .button--green:active {
+    background: linear-gradient(@button-gradient-dark-green, @button-gradient-light-green);
+    &:before {
+      background-color: darken(@color-bg-success, 7%);
+    }
+    span {
+      opacity: .8;
+    }
+  }
+}
+

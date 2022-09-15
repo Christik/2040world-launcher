@@ -1,0 +1,43 @@
+/*===============================
+  Screen Loading
+  ===============================*/
+
+.screen-loading {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(fade(#00e7eb, 25%), fade(#00e7eb, 0%));
+    pointer-events: none;
+  }
+}
+
+.loading {
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 20.5rem;
+    height: 20.5rem;
+    background: url('@{path-image}/scanner.gif') no-repeat 50% 50%;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+  }
+}
+.loading__title {
+  position: relative;
+}
+.loading__bar {
+  position: relative;
+}
+.loading__label {
+  position: relative;
+}

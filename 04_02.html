@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>2040 world launcher</title>
+
+    <link rel="stylesheet" href="_asset/css/styles.css">
+
+    <script src="_asset/js/ls.bgset.min.js"></script>
+    <script src="_asset/js/lazysizes.min.js"></script>
+    <script>
+        (function(){
+            window.lazySizesConfig = window.lazySizesConfig || {};
+            window.lazySizesConfig.preloadAfterLoad = true;
+        })();
+    </script>
+</head><body class="is-error">
+    <div class="screen">
+        <img class="lazyload page-bg"
+             data-sizes="auto"
+             data-srcset="./_asset/img/bg-forest.jpg 3530w, ./_asset/img/bg-forest@2x.jpg 7060w"
+             width="3530" height="1080" alt="">
+        <img class="lazyload gaby"
+             data-sizes="auto"
+             data-srcset="./_asset/img/gaby.png 582w, ./_asset/img/gaby@2x.png 1164w"
+             width="582" height="1464" alt="">        <header class="page-header">
+            <div class="container">
+                <div class="page-header__in">
+                    <img class="lazyload page-header__logo"
+                         data-src="_asset/img/logo.svg"
+                         width="168" height="66"
+                         alt="2040world">
+        
+        
+                        <div class="user">
+                            <div class="avatar user__avatar">
+                                <!-- Фото, если есть
+        						<img class="lazyload avatar__img"
+        							 data-src="https://via.placeholder.com/200"
+        							 width="100" height="100" alt="">
+        						-->
+                            </div>
+                            <div class="box-text user__text">
+                                <a class="text-body text-link user__text__in"
+                                   href="#">
+                                    namename@gmail.com
+                                </a>
+                            </div>
+                        </div><!--.user-->
+                </div><!--.page-header__in-->
+            </div><!--.container-->
+        </header><!--.page-header-->
+
+        <div class="content-bottom">
+            <div class="container">
+                <div class="content-bottom__in">
+                    <div class="content-bottom__left">
+
+                    </div><!--.content-bottom__left-->
+
+                    <div class="content-bottom__center">
+                        <div class="form-group">
+                            <button type="button" class="button button--green">
+                                <span>Play</span>
+                            </button>
+                        </div>
+                    </div><!--.content-bottom__center-->
+
+                    <div class="content-bottom__right">
+                        <div class="box-text">
+                            <p class="text-body text-color-warning">
+                                Server is under maintenance
+                            </p>
+                        </div>
+                    </div><!--.content-bottom__right-->
+                </div><!--.content-bottom__in-->
+            </div><!--.container-->
+        </div><!--.content-bottom-->
+    </div><!--.screen-->
+
+	<script src="./_asset/js/app.js"></script>
+</body>
+</html>

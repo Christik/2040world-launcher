@@ -1,0 +1,38 @@
+/*===============================
+  Email Send
+  ===============================*/
+
+.icon-email-send {}
+.icon-email-send__arrow {
+  display: block;
+  margin: 0 auto .4rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: .4rem .5rem 0 .5rem;
+  border-color: @color-bg-accent transparent transparent transparent;
+  animation: sendArrow infinite linear forwards 2s;
+
+  &:nth-child(1) {
+    border-top-color: fade(@color-bg-accent, 20%);
+  }
+  &:nth-child(2) {
+    border-top-color: fade(@color-bg-accent, 50%);
+    animation-delay: .3s;
+  }
+  &:nth-child(3) {
+    animation-delay: .6s;
+  }
+}
+.icon-email-send__icon {
+  display: block;
+  margin: .7rem auto 0;
+  width: 2rem;
+  height: 1.6rem;
+}
+
+@keyframes sendArrow {
+  from { opacity: 0; }
+  15%, 60% { opacity: 1; }
+  75%, to { opacity: 0; }
+}

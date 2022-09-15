@@ -1,0 +1,48 @@
+/*===============================
+  Content Top
+  ===============================*/
+
+.content-top {
+  position: relative;
+  margin-bottom: auto;
+}
+
+/*===============================
+  Content Middle
+  ===============================*/
+
+.content-middle {
+  position: relative;
+  margin: auto;
+  max-width: 40rem;
+}
+
+/*===============================
+  Content Bottom
+  ===============================*/
+
+.content-bottom {
+  position: relative;
+  margin-top: auto;
+}
+.content-bottom__in {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.content-bottom__left,
+.content-bottom__center,
+.content-bottom__right {
+  min-height: 4rem;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+.content-bottom__left {
+  justify-content: flex-start;
+}
+.content-bottom__center {
+  justify-content: center;
+}
+.content-bottom__right {
+  justify-content: flex-end;
+}

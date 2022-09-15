@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>2040 world launcher</title>
+
+    <link rel="stylesheet" href="_asset/css/styles.css">
+
+    <script src="_asset/js/ls.bgset.min.js"></script>
+    <script src="_asset/js/lazysizes.min.js"></script>
+    <script>
+        (function(){
+            window.lazySizesConfig = window.lazySizesConfig || {};
+            window.lazySizesConfig.preloadAfterLoad = true;
+        })();
+    </script>
+</head><body>
+    <div class="screen screen-loading">
+        <header class="page-header">
+            <div class="container">
+                <div class="page-header__in">
+                    <img class="lazyload page-header__logo"
+                         data-src="_asset/img/logo.svg"
+                         width="168" height="66"
+                         alt="2040world">
+        
+                        <div class="logo-alpha">
+                            <div class="logo-alpha__title">
+                                <span>Alpha</span>
+                            </div>
+                            <div class="logo-alpha__caption">
+                                Version
+                            </div>
+                        </div>
+        
+                </div><!--.page-header__in-->
+            </div><!--.container-->
+        </header><!--.page-header-->
+
+        <div class="content-middle">
+            <div class="loading">
+                <div class="text-bordered loading__title intent-bottom-2xl">
+                    Loading
+                </div>
+                <div class="progress-bar loading__bar intent-bottom-2xl">
+                    <div class="progress-bar__fill"
+                         style="width: 70%"></div>
+                </div>
+                <div class="box-text text-body text-body--l loading__label">70%</div>
+            </div>
+        </div><!--.content-middle-->
+    </div><!--.screen-->
+
+	<script src="./_asset/js/app.js"></script>
+</body>
+</html>

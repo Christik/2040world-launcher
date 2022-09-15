@@ -1,0 +1,27 @@
+/*===============================
+  Intents
+  ===============================*/
+
+@intent-3xs: .2vw; // 4px
+@intent-2xs: .4vw; // 8px
+@intent-xs: .625vw; // 12px
+@intent-s: .83vw; // 16px
+@intent-m: 1vw; // 20px
+@intent-l: 1.3vw; // 26px;
+@intent-xl: 1.6vw; // 32px
+@intent-2xl: 2.1vw; // 42px
+@intent-3xl: 2.5vw; // 50px
+@intent-4xl: 3vw; // 60px
+
+@intents: 3xs, 2xs, xs, s, m, l, xl, 2xl, 3xl, 4xl;
+
+each(@intents, {
+  .intent-bottom-@{value} {
+    @intent: "intent-@{value}";
+    margin-bottom: @@intent !important;
+  }
+  .intent-top-@{value} {
+    @intent: "intent-@{value}";
+    margin-top: @@intent !important;
+  }
+});

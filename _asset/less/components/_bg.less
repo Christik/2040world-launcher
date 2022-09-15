@@ -1,0 +1,29 @@
+/*===============================
+  Page Background
+  ===============================*/
+
+.page-bg,
+.gaby {
+  display: block;
+  position: absolute;
+  left: 50%;
+}
+.page-bg {
+  top: 0;
+  transform: translateX(-50%);
+  width: auto;
+  height: 100%;
+  padding: 0 @page-space-left;
+}
+.gaby {
+  top: 30.5%;
+  transform: translate(-50%,-19%);
+  height: auto;
+  width: 30.3%;
+}
+
+body.is-error {
+  .page-bg, .gaby {
+    filter: grayscale(1);
+  }
+}
