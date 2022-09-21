@@ -1,0 +1,52 @@
+{{> layouts/head title="2040 world launcher" }}
+<body>
+    <div class="screen">
+        {{> components/bg }}
+        {{> layouts/header }}
+
+        <div class="content-bottom">
+            <div class="container">
+                <div class="content-bottom__in">
+                    <div class="content-bottom__left">
+
+                    </div><!--.content-bottom__left-->
+
+                    <div class="content-bottom__center">
+                        <form class="form-row" autocomplete="off">
+                            <div class="form-group">
+                                <label class="form-label">Login</label>
+                                <input class="form-field is-error" type="text">
+                                <div class="form-group-message">
+                                    <p class="text-body text-color-error intent-bottom-2xs">Error message</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <input class="form-field is-error" type="password">
+                                <div class="form-group-message">
+                                    <p class="text-body text-color-error intent-bottom-2xs">Error message</p>
+                                    <a class="text-body text-link"
+                                       href="#">
+                                        Forgot password?
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="button">
+                                    <span>Log in</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div><!--.content-bottom__center-->
+
+                    <div class="content-bottom__right">
+
+                    </div><!--.content-bottom__right-->
+                </div><!--.content-bottom__in-->
+            </div><!--.container-->
+        </div><!--.content-bottom-->
+    </div><!--.screen-->
+
+	{{> layouts/foot }}
+</body>
+</html>

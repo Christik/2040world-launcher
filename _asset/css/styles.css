@@ -397,7 +397,7 @@ textarea {
   color: #ff511c;
 }
 .text-color-error {
-  color: #ff0000;
+  color: #ff3d3d;
 }
 /*===============================
   Container
@@ -675,6 +675,9 @@ body.is-error .button {
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.04em;
+}
+.form-field.is-error {
+  border-color: #ff3d3d;
 }
 /*===============================
   Form Group
