@@ -615,6 +615,23 @@ img.lazyload:not([src]) {
 .button--green:before {
   background-color: #00d76a;
 }
+.button[disabled] {
+  pointer-events: none;
+}
+.button[disabled]:after {
+  content: '';
+  display: block;
+  width: 3.75vw;
+  height: 3.75vw;
+  background: url('../img/loader.svg') no-repeat 50% 50%;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  right: 0.5vw;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 body.is-error .button {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);

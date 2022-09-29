@@ -53,6 +53,24 @@
   }
 }
 
+// Disabled
+.button[disabled] {
+  pointer-events: none;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 3.75vw;
+    height: 3.75vw;
+    background: url('@{path-image}/loader.svg') no-repeat 50% 50%;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: .5vw;
+    transform: translateY(-50%);
+  }
+}
+
 // Body Error
 body.is-error {
   .button {
