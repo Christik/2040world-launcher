@@ -4,8 +4,13 @@
 
 @button-gradient-light: #fddf79;
 @button-gradient-dark: #bf9400;
+
 @button-gradient-light-green: #5dffad;
 @button-gradient-dark-green: #0c8648;
+
+@button-color-marsh: #85adad;
+@button-gradient-light-marsh: #a0d1d1;
+@button-gradient-dark-marsh: #446e6f;
 
 .button {
   width: 100%;
@@ -25,6 +30,7 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .06em;
+  cursor: pointer;
 
   &:before {
     content: '';
@@ -50,6 +56,14 @@
   background: linear-gradient(@button-gradient-light-green, @button-gradient-dark-green);
   &:before {
     background-color: @color-bg-success;
+  }
+}
+
+// Marsh
+.button--marsh {
+  background: linear-gradient(@button-gradient-light-marsh, @button-gradient-dark-marsh);
+  &:before {
+    background-color: @button-color-marsh;
   }
 }
 
@@ -79,6 +93,19 @@ body.is-error {
   }
 }
 
+// Input File
+label.button {
+
+  input[type=file] {
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
 @media (hover: hover) {
   .button:hover {
     &:before {
@@ -103,6 +130,22 @@ body.is-error {
     background: linear-gradient(@button-gradient-dark-green, @button-gradient-light-green);
     &:before {
       background-color: darken(@color-bg-success, 7%);
+    }
+    span {
+      opacity: .8;
+    }
+  }
+
+  .button--marsh:hover {
+    &:before {
+      background-color: darken(@button-color-marsh, 7%);
+    }
+  }
+
+  .button--marsh:active {
+    background: linear-gradient(@button-gradient-dark-marsh, @button-gradient-light-marsh);
+    &:before {
+      background-color: darken(@button-color-marsh, 10%);
     }
     span {
       opacity: .8;

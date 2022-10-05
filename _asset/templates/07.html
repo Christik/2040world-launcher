@@ -1,0 +1,55 @@
+{{> layouts/head title="2040 world launcher" }}
+<body>
+    <div class="screen">
+        {{> components/bg }}
+        {{> layouts/header }}
+
+        <div class="content-bottom">
+            <div class="container">
+                <div class="content-bottom__in">
+                    <div class="content-bottom__left">
+
+                    </div><!--.content-bottom__left-->
+
+                    <div class="content-bottom__center">
+                        <form class="form-row" autocomplete="off">
+                            <div class="form-group form-group--l">
+                                <label class="form-label">Destination folder</label>
+                                <input class="form-field" type="text">
+                            </div>
+
+                            <!-- Кнопка input file -->
+                            <div class="form-group form-group--s">
+                                <label class="button button--marsh">
+                                    <input type="file" webkitdirectory directory>
+                                    <span>Browse</span>
+                                </label>
+                            </div>
+
+                            <!-- Кнопка button
+                            <div class="form-group form-group--s">
+                                <button type="button" class="button button--marsh">
+                                    <span>Browse</span>
+                                </button>
+                            </div>
+                            -->
+
+                            <div class="form-group">
+                                <button type="submit" class="button">
+                                    <span>Next</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div><!--.content-bottom__center-->
+
+                    <div class="content-bottom__right">
+
+                    </div><!--.content-bottom__right-->
+                </div><!--.content-bottom__in-->
+            </div><!--.container-->
+        </div><!--.content-bottom-->
+    </div><!--.screen-->
+
+	{{> layouts/foot }}
+</body>
+</html>

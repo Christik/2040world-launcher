@@ -590,6 +590,7 @@ img.lazyload:not([src]) {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 .button:before {
   content: '';
@@ -615,6 +616,14 @@ img.lazyload:not([src]) {
 .button--green:before {
   background-color: #00d76a;
 }
+.button--marsh {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a0d1d1), to(#446e6f));
+  background: -o-linear-gradient(#a0d1d1, #446e6f);
+  background: linear-gradient(#a0d1d1, #446e6f);
+}
+.button--marsh:before {
+  background-color: #85adad;
+}
 .button[disabled] {
   pointer-events: none;
 }
@@ -636,6 +645,14 @@ body.is-error .button {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   pointer-events: none;
+}
+label.button input[type=file] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
 }
 @media (hover: hover) {
   .button:hover:before {
@@ -661,6 +678,20 @@ body.is-error .button {
     background-color: #00b358;
   }
   .button--green:active span {
+    opacity: 0.8;
+  }
+  .button--marsh:hover:before {
+    background-color: #709f9f;
+  }
+  .button--marsh:active {
+    background: -webkit-gradient(linear, left top, left bottom, from(#446e6f), to(#a0d1d1));
+    background: -o-linear-gradient(#446e6f, #a0d1d1);
+    background: linear-gradient(#446e6f, #a0d1d1);
+  }
+  .button--marsh:active:before {
+    background-color: #679999;
+  }
+  .button--marsh:active span {
     opacity: 0.8;
   }
 }
@@ -702,6 +733,12 @@ body.is-error .button {
 .form-group {
   width: 18rem;
   position: relative;
+}
+.form-group--s {
+  width: 12rem;
+}
+.form-group--l {
+  width: 24rem;
 }
 /*===============================
   Form Message
